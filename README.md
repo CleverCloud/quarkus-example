@@ -29,7 +29,7 @@ Export them using the `.env` file:
 
 Import them on the clever CLI
 
-    clever env import-vars CC_JAVA_VERSION,CC_MAVEN_PROFILES,CC_RUN_COMMAND
+    clever env import-vars CC_JAVA_VERSION,CC_MAVEN_PROFILES,CC_RUN_COMMAND,GRADLE_DEPLOY_GOAL
 
 ## Enjoy
 
