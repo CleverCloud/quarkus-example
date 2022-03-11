@@ -23,12 +23,6 @@ Within this cloned repository, do:
 
     clever create --type maven quarkus-example
 
-```
-CC_JAVA_VERSION=graalvm-ce
-CC_MAVEN_PROFILES=native
-CC_RUN_COMMAND=target/quarkus-quickstart-1.0-runner
-```
-
 Export them using the `.env` file:
 
     source .env
