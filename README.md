@@ -13,13 +13,13 @@ This application provides a simple REST endpoint:
 ## Technology Stack
 
 - [Quarkus](https://quarkus.io/) - A Kubernetes Native Java framework tailored for GraalVM & OpenJDK HotSpot
-- Java 21
+- Java 25
 - Maven
 - GraalVM (for native compilation)
 
 ## Prerequisites
 
-- JDK 21+
+- JDK 25+
 - Maven 3.8.1+
 
 ## Running the Application Locally
@@ -36,7 +36,7 @@ This command starts the application in development mode with live coding enabled
 
 ```bash
 ./mvnw package
-java -jar target/quarkus-example-1.0.0-SNAPSHOT-runner.jar
+java -jar ./target/quarkus-example-1.1.0-SNAPSHOT-runner.jar
 ```
 
 ## Deploying on Clever Cloud
@@ -62,8 +62,8 @@ Add the following environment variables in the Clever Cloud console:
 
 | Variable | Value | Description |
 |----------|-------|-------------|
-| `CC_JAVA_VERSION` | `21` | Specifies to use Java 21 |
-| `CC_RUN_COMMAND` | `java -jar target/quarkus-example-1.0.0-SNAPSHOT.jar` | Specifies the executable to run |
+| `CC_JAVA_VERSION` | `25` | Specifies to use Java 25 |
+| `CC_RUN_COMMAND` | `java -jar ./target/quarkus-example-1.1.0-SNAPSHOT-runner.jar` | Specifies the executable to run |
 
 #### 4. Deploy Your Application
 
@@ -107,8 +107,8 @@ clever create --type maven <YOUR_APP_NAME>
 clever domain add <YOUR_DOMAIN_NAME>
 
 # Step 3: Set the required environment variables
-clever env set CC_JAVA_VERSION 21
-clever env set CC_RUN_COMMAND java -jar target/quarkus-example-1.0.0-SNAPSHOT.jar
+clever env set CC_JAVA_VERSION 25
+clever env set CC_RUN_COMMAND java -jar ./target/quarkus-example-1.1.0-SNAPSHOT.jar
 ```
 
 #### 4. Deploy your application
