@@ -1,5 +1,3 @@
-![Clever Cloud logo](/github-assets/clever-cloud-logo.png)
-
 # Quarkus REST Example Application in Clever Cloud
 [![Clever Cloud - PaaS](https://img.shields.io/badge/Clever%20Cloud-PaaS-orange)](https://clever-cloud.com)
 
